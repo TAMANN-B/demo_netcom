@@ -1,0 +1,584 @@
+/* chargement des police de puis google font*/
+/* personnalisation global de la page*/
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --blue:#71A1E8;
+    --nav:#3079e6ce;
+    --black:#000;
+    --white:#FFF;
+}
+
+.top_frame
+{
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+}
+
+.top_frame div
+{
+    padding: 1vh 0px 0px 30px;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.top_frame div span
+{
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+.top_frame nav
+{
+    padding-right: 3vh;
+}
+
+.top_frame nav ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_frame nav ul li
+{
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 30px;
+    padding-top: 2vh;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+
+.top_frame nav ul li a
+{
+    text-decoration: none;
+    color: var(--white);
+    transition: 2.3s;
+}
+
+.top_frame nav ul li a:hover
+{
+    color: #000;
+}
+
+.top_frame nav ul li a .icons_link_top
+{
+    font-size: 0.7em;
+}
+
+.container
+{
+    /*text-align: center;*/
+    background-color: var(--white);
+}
+
+.container .bannière
+{
+    background-color: var(--blue);
+    width: 100%;
+    height: 92vh;
+    display: flex;
+}
+
+.container .bannière .ban_gauche
+{
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.container .bannière .ban_gauche div h1
+{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 300px;
+    font-size: 3em;
+}
+
+.container .bannière .ban_gauche div h1 span
+{
+    color: var(--white);
+}
+
+#para_gauche1
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+#para_gauche2
+{
+    font-size: 30px;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+
+.container .bannière .ban_droite
+{
+    width: 40%;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.container .bannière .ban_droite .box_img
+{
+    background-color: var(--black);
+    width: 70%;
+    /*height: 50%;*/
+    padding-top: 20%;
+    margin-top: 30%;
+    margin-left: 3%;
+    border-radius: 4%;
+}
+
+.container .bannière .ban_droite .box_img img
+{
+    width: 100%;
+    margin-left: 120px;
+    border: 5px solid var(--blue);
+    border-radius: 5%;
+}
+
+.container .presentation #IT{
+    background: url(fichier/images/IT.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+}
+
+.container .presentation #solar{
+    background: url(fichier/images/solaire.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+}
+
+.container .presentation #dev{
+    background: url(fichier/images/programmeur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+}
+
+.container .presentation #fromation{
+    background: url(fichier/images/formateur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: scale-down;
+}
+
+.container .presentation
+{
+    display: flex;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+}
+
+.container .presentation::before
+{
+    content: "";
+    width: 250px;
+    height: 20px;
+    background-color: var(--black);
+    position: absolute;
+    top: 20;
+    left: 30;
+    margin-top: 2%;
+}
+
+.container .presentation .zone_texte
+{
+    width: 40%;
+    margin-top: 5%;
+}
+
+.container .presentation .zone_texte h3
+{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.container .presentation .zone_texte p
+{
+    font-size: 24px;
+    margin-top: 3%;
+}
+
+.container .presentation .zone_texte .stats
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.container .presentation .zone_texte .stats p
+{
+    text-align: center;
+    border: 1px solid var(--white);
+    box-shadow: 2px 2px 5px ;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.container .presentation .zone_pic
+{
+    width: 40%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.container .presentation .zone_pic div
+{
+    width: 280px;
+    height: 280px;
+    box-shadow: 3px 2px 5px var(--black);
+    border-radius: 4%;
+}
+
+.container .presentation .zone_pic .small
+{
+    width: 230px;
+    height: 230px;
+    box-shadow: 3px 2px 5px var(--black);
+    border-radius: 4%;
+}
+
+.container .services
+{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.container .services::before
+{
+    content: "";
+    width: 250px;
+    height: 20px;
+    background-color: var(--black);
+    position: absolute;
+    top: 20;
+    left: 30;
+    margin-top: 2%;
+}
+
+.container .services h3
+{
+    text-align: start;
+    font-weight: 600;
+    font-size: 36px;
+    padding-top: 4%;
+}
+
+.container .services p
+{
+    text-align: justify;
+    font-size: 24px;
+}
+
+.container .services .services_container
+{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+
+.container .services .services_container .carte_service
+{
+    width: 80%;
+    margin: 0px 70px;
+    height: 550px;
+    box-shadow: 2px 0px 5px var(--blue);
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    
+}
+
+.container .services .services_container .carte_service:hover
+{
+    height: auto;
+}
+
+.container .services .services_container .carte_service img
+{
+    width: 100%;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.container .services .services_container .carte_service img:hover
+{
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+.container .projet_section
+{
+    width: 100%;
+    background-color: var(--blue);
+    height: auto;
+}
+
+.container .projet_section::before
+{
+ content: "";
+    width: 250px;
+    height: 20px;
+    background-color: var(--black);
+    position: absolute;
+    top: 10;
+    left: 30;
+    margin-top: 2%;  
+    margin-left: 5%; 
+}
+
+.container .projet_section h3
+{
+    text-align: start;
+    font-weight: 600;
+    font-size: 36px;
+    padding-top: 70px;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+.container .projet_section .projet_container
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+
+.container .projet_section .projet_container .carte_projet_recent
+{
+    width: 70%;
+    background-color: var(--white);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 0px 15px var(--black);
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden;
+}
+
+.container .team_section
+{
+    width: 80%;
+    border: var(--white) 1px solid;
+    margin: 1% 10%;
+    height: auto;
+}
+
+.container .team_section::before
+{
+    content: "";
+    width: 250px;
+    height: 20px;
+    background-color: var(--black);
+    position: absolute;
+    color: red;
+    top: 10;
+    left: 30;
+    margin-top: 2%; 
+}
+
+.container .team_section h3
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+.container .team_section .team_contenaire
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container .team_section .team_contenaire img
+{
+    width: 70%;
+    height: 60%;
+    border-radius: 250px;
+}
+
+.container .team_section .team_contenaire .team_agent
+{
+    width: 30%;
+    overflow: hidden;
+    height: 350px;
+}
+
+.container .team_section .team_contenaire .team_agent span
+{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--blue);
+    text-transform: capitalize;
+}
+
+.container .pre_footer
+{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: var(--blue);
+    margin-top: 10px;
+}
+
+.container .pre_footer img
+{
+    width: 30%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.container .pre_footer .zone_contact
+{
+    width: 70%;
+    margin: 1% 20%;
+}
+
+.container .pre_footer .zone_contact form
+{
+    padding: 15% 5%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container .pre_footer .zone_contact form input
+{
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+}
+
+.container .pre_footer .zone_contact form textarea
+{
+    width: 100%;
+    resize: none;
+    height: 150px;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.container .pre_footer .zone_contact button
+{
+    display: block;
+    width: 55%;
+    margin-left: 20%;
+    border-radius: 20px;
+    border: 1px solid var(--blue);
+    height: auto;
+    cursor: pointer;
+}
+
+.container .pre_footer .zone_contact button:hover
+{
+    color:var(--white);
+    background-color: green;
+}
+
+footer
+{
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+footer section
+{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer section #lien_bottom
+{
+    color:var(--blue);
+}
+
+footer section #lien_bottom ul li
+{
+    list-style: none;
+}
+
+footer section #lien_bottom ul li a
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+footer section #lien_bottom ul li a:hover
+{
+    border-bottom: 2px solid var(--blue);
+}
+
+footer section #lien_bottom ul li a .icon_link_bottom
+{
+    font-size: 0.7em;
+}
+
+footer section .rx_link ul li
+{
+    list-style: none;
+}
+
+footer section .rx_link ul li a
+{
+    text-decoration: none;
+    color: var(--black);
+}
